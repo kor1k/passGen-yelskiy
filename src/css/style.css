@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+#elem {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid green;
+    transition: .4s;
+}
+
+#elem:hover {
+    background-color: red;
+    transform: scale(1.2);
+}
