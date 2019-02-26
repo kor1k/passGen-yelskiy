@@ -32,3 +32,8 @@ body {
     background-color: red;
 }
 
+.reload {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: lightcyan;
+}
