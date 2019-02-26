@@ -5,16 +5,23 @@ body {
     text-align: center;
 }
 
-#elem {
-    width: 100px;
-    height: 100px;
+.button {
+    margin-top: 3rem;
+    width: 13rem;
+    height: 5rem;
     box-sizing: border-box;
-    border-radius: 20px;
-    border: 1px solid green;
-    transition: .4s;
+    border: 1px slateblue;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.button > span {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 #elem:hover {
     background-color: red;
-    transform: scale(1.2);
 }
+
