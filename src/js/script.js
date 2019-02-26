@@ -13,11 +13,13 @@
 
 function generatePassword() {
     // length of password
-    let length = 10;
+    let lenOfPass = +prompt('Enter your length of password');
+    let length = lenOfPass;
     // charset
     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     // value of password
     let retVal = '';
+    1
     // cycle for genering password
     for (let i = 0, n = charset.length; i < length; ++i) {
         retVal += charset.charAt(Math.floor(Math.random() * n));
@@ -34,5 +36,5 @@ generate.onclick = function () {
 };
 
 //TODO: Добавить диапазон длинны ОТ и До
-//TODO: Кол-во паролей, которые должны быть выведены
+//TODO: Кол-во сиволов, который должны быть выведены || Done
 //TODO: Кол-во выводимых паролей
