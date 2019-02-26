@@ -15,6 +15,7 @@ body {
     margin-top: 3rem;
     width: 13rem;
     height: 5rem;
+    background-color: lightblue;
     box-sizing: border-box;
     border: 1px slateblue;
     border-radius: 2rem;

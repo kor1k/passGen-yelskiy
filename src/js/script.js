@@ -1,7 +1,4 @@
-function reloadBtn() {
-    location.reload();
-}
-
+function reloadBtn() {location.reload();}
 //-------------------------
 // Only numbers password
 // let charset = '1234567890';
