@@ -18,11 +18,11 @@ function rand(lower, upper) {
     return Math.floor(Math.random() * (upper - lower) + lower);
 }
 document.getElementById('elem').onclick = function() {
-    let lower = +document.getElementById('lower').innerText;
-    let upper = +document.getElementById('upper').innerText;
-    let quantity = +document.getElementById('quantity').innerText;
+    let lower = +document.getElementById('lower').value;
+    let upper = +document.getElementById('upper').value;
+    let quantity = +document.getElementById('quantity').value;
     for( let i = 0; i< quantity; i++) {
-        console.log('bla')
+        // console.log('bla')
         console.log(rand(lower,upper))
     }
 };
