@@ -13,46 +13,71 @@
 // let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}:"?|<>~'
 
 
-function generatePassword() {
-    // length of password
-    // let test_low = document.getElementById('lower');
-    let notValid = '';
-    let lenOfPass = +prompt('Enter your length of password');
-    // let lenOfPass = test_low;
-    if (isNaN(lenOfPass) === true) {
-        alert('There is no numbers! Please try one more time ')
-    }
-    if (lenOfPass === false) {
-        alert('You pressed Cancel')
-    }
-    if (lenOfPass == null) {
-        alert('Try one more time!')
-    }
-    if (lenOfPass === notValid) {
-        alert('0 does not exist!')
-    }
-    let length = lenOfPass;
-    // charset
-    let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    // value of password
-    let retVal = '';
-    // cycle for gen password
-    for (let i = 0, n = charset.length; i < length; ++i) {
-        retVal += charset.charAt(Math.floor(Math.random() * n));
-    }
-    // login in console
-    console.log(retVal);
-    // adding pass in HTML by .innerText
-    let typeInHtml = document.getElementById('typeInHtml');
-    typeInHtml.innerText = retVal;
-    return retVal;
+// function generatePassword() {/
+function rand(lower, upper) {
+    return Math.floor(Math.random() * (upper - lower) + lower);
 }
-
-// taking element from HTML by Id and giving function to this element
-let generate = document.getElementById('elem');
-generate.onclick = function () {
-    alert('Random number is: ' + generatePassword());
+document.getElementById('elem').onclick = function() {
+    let lower = +document.getElementById('lower').innerText;
+    let upper = +document.getElementById('upper').innerText;
+    let quantity = +document.getElementById('quantity').innerText;
+    for( let i = 0; i< quantity; i++) {
+        console.log('bla')
+        console.log(rand(lower,upper))
+    }
 };
+
+
+// let generate = document.getElementById('elem');
+// generate.click();
+
+
+
+
+
+
+
+// generate.onclick = function () {
+//  alert(rand(low, high));
+// }
+// length of password
+// let test_low = document.getElementById('lower');
+//     let notValid = '';
+//     let lenOfPass = +prompt('Enter your length of password');
+//     // let lenOfPass = test_low;
+//     if (isNaN(lenOfPass) === true) {
+//         alert('There is no numbers! Please try one more time ')
+//     }
+//     if (lenOfPass === false) {
+//         alert('You pressed Cancel')
+//     }
+//     if (lenOfPass == null) {
+//         alert('Try one more time!')
+//     }
+//     if (lenOfPass === notValid) {
+//         alert('0 does not exist!')
+//     }
+//     let length = lenOfPass;
+//     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+//     // value of password
+//     let retVal = '';
+//     // cycle for gen password
+//     for (let i = 0, n = charset.length; i < length; ++i) {
+//         retVal += charset.charAt(Math.floor(Math.random() * n));
+//     }
+//     // login in console
+//     console.log(retVal);
+//     // adding pass in HTML by .innerText
+//     let typeInHtml = document.getElementById('typeInHtml');
+//     typeInHtml.innerText = `${retVal} <- random pass`;
+//     return retVal;
+// }
+//
+// // taking element from HTML by Id and giving function to this element
+// let generate = document.getElementById('elem');
+// generate.onclick = function () {
+//     alert('Random number is: ' + generatePassword());
+// };
 
 
 //TODO: Кол-во выводимых паролей
