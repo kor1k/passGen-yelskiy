@@ -15,10 +15,10 @@
 
 function generatePassword() {
     // length of password
-    let test_low = document.getElementById('lower');
+    // let test_low = document.getElementById('lower');
     let notValid = 0;
-    // let lenOfPass = +prompt('Enter your length of password');
-    let lenOfPass = test_low;
+    let lenOfPass = +prompt('Enter your length of password');
+    // let lenOfPass = test_low;
     if (isNaN(lenOfPass) === true) {
         alert('There is no numbers! Please try one more time ')
     }
@@ -39,18 +39,22 @@ function generatePassword() {
     }
     // login in console
     console.log(retVal);
+    let typeInHtml = document.getElementById('typeInHtml');
+    typeInHtml.innerText = retVal;
     return retVal;
+
 }
 
 // taking element from HTML by Id and giving function to this element
 let generate = document.getElementById('elem');
 generate.onclick = function () {
-    alert(generatePassword());
+    alert('Random number is: ' + generatePassword());
 };
 
 
 //TODO: Добавить диапазон длинны ОТ и До
 //TODO: Кол-во сиволов, который должны быть выведены || Done
 //TODO: Кол-во выводимых паролей
+// TODO: Вывод сгенерированого числа в HTML || Done
 //TODO: Добавить проверку на 0 || Done
 //TODO: Добавить проверку на -число
