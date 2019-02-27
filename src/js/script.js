@@ -16,7 +16,7 @@
 function generatePassword() {
     // length of password
     // let test_low = document.getElementById('lower');
-    let notValid = 0;
+    let notValid = '';
     let lenOfPass = +prompt('Enter your length of password');
     // let lenOfPass = test_low;
     if (isNaN(lenOfPass) === true) {
@@ -24,6 +24,9 @@ function generatePassword() {
     }
     if (lenOfPass === false) {
         alert('You pressed Cancel')
+    }
+    if (lenOfPass == null) {
+        alert('Try one more time!')
     }
     if (lenOfPass === notValid) {
         alert('0 does not exist!')
@@ -33,16 +36,16 @@ function generatePassword() {
     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     // value of password
     let retVal = '';
-    // cycle for genering password
+    // cycle for gen password
     for (let i = 0, n = charset.length; i < length; ++i) {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
     // login in console
     console.log(retVal);
+    // adding pass in HTML by .innerText
     let typeInHtml = document.getElementById('typeInHtml');
     typeInHtml.innerText = retVal;
     return retVal;
-
 }
 
 // taking element from HTML by Id and giving function to this element
@@ -52,9 +55,9 @@ generate.onclick = function () {
 };
 
 
-//TODO: Добавить диапазон длинны ОТ и До
-//TODO: Кол-во сиволов, который должны быть выведены || Done
 //TODO: Кол-во выводимых паролей
+//TODO: Добавить диапазон длинны ОТ и До
+//TODO: Добавить проверку на -число
+//TODO: Кол-во сиволов, который должны быть выведены || Done
 // TODO: Вывод сгенерированого числа в HTML || Done
 //TODO: Добавить проверку на 0 || Done
-//TODO: Добавить проверку на -число

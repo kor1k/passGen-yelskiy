@@ -36,6 +36,11 @@ input {
     background-color: red;
 }
 
+#typeInHtml {
+    margin-top: 2rem;
+    display: flex;
+}
+
 .reload {
     width: 7rem;
     height: 2.5rem;
