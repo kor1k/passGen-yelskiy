@@ -1,4 +1,4 @@
-function reloadBtn() {location.reload();}
+// function reloadBtn() {location.reload();}
 //-------------------------
 // Only numbers password
 // let charset = '1234567890';
@@ -15,8 +15,10 @@ function reloadBtn() {location.reload();}
 
 function generatePassword() {
     // length of password
+    let test_low = document.getElementById('lower');
     let notValid = 0;
-    let lenOfPass = +prompt('Enter your length of password');
+    // let lenOfPass = +prompt('Enter your length of password');
+    let lenOfPass = test_low;
     if (isNaN(lenOfPass) === true) {
         alert('There is no numbers! Please try one more time ')
     }
@@ -45,6 +47,7 @@ let generate = document.getElementById('elem');
 generate.onclick = function () {
     alert(generatePassword());
 };
+
 
 //TODO: Добавить диапазон длинны ОТ и До
 //TODO: Кол-во сиволов, который должны быть выведены || Done

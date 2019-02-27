@@ -8,6 +8,10 @@ body {
     align-items: center;
 }
 
+input {
+    margin-right: 2rem;
+}
+
 .button {
     display: flex;
     justify-content: center;
