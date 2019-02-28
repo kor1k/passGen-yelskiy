@@ -1,4 +1,4 @@
-//genering random number
+//GEN random number
 function rand(lower, upper) {
     return Math.floor(Math.random() * (upper - lower) + lower);
 }
@@ -11,6 +11,10 @@ document.getElementById('elem').onclick = function randAction() {
     let upper = +document.getElementById('upper').value;
     // taking value from quantity input
     let quantity = +document.getElementById('quantity').value;
+    if (quantity => (lower || upper)){
+        alert('Quantity cant be bigger that lower and upper');
+        return false;
+    }
     // check for INT limits
     if (lower > limitVal) {
         alert('Number is not valid! Check text in head of page');
@@ -32,16 +36,16 @@ document.getElementById('elem').onclick = function randAction() {
         return false;
     }
     // check for isNaN quantity
-    if (isNaN(lower) == true) {
+    if (isNaN(lower) === true) {
         alert('Wrong! Input is not a number!');
         return false;
     }
     // check for isNaN lower and upper
-    if (isNaN(lower || upper) == true) {
+    if (isNaN(lower || upper) === true) {
         alert('Wrong! Input is not a number!');
         return false;
     }
-    if (isNaN(quantity) == true) {
+    if (isNaN(quantity) === true) {
         alert('Wrong! Input is not a number!');
         return false;
     }
