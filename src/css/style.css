@@ -6,7 +6,7 @@
 }
 
 .container {
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,18 +31,61 @@ input {
     border-radius: 20px;
 }
 
-#typeInHtml {
-    margin-bottom: 1rem;
-    border-radius: 20px;
+.testType {
+    width: 500px;
+    height: 400px;
+!important;
 }
 
-#clean-console {
+#typeInHtml {
+    margin-bottom: 1rem;
+    width: 500px;
+    height: auto;
+}
+
+.testType {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+#clean-numbers-in-html {
+    margin-top: 1rem;
     border-radius: 20px;
-    border: 1px solid green;
+    border: 1px solid navy;
     width: 200px;
     height: 50px;
 }
 
-p {
-    margin-bottom: 1rem;
+.clean-numbers {
+    transition: .4s;
+}
+
+.clean-numbers:active, .button:active {
+    transform: scale(1.2);
+}
+
+.clean-numbers:hover {
+    background: lightyellow;
+}
+
+#elem {
+    background: lightcyan;
+    transition: .4s;
+}
+
+#elem:hover {
+    background: lightgreen;
+}
+
+
+
+h1 > span {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.testType > p {
+    margin: 0.5rem;
+    display: inline-block;
 }

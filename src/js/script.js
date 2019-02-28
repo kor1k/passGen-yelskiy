@@ -53,15 +53,22 @@ document.getElementById('elem').onclick = function () {
     }
     //cycle for type n-th quantity of numbers
     for (let i = 0; i < quantity; i++) {
-        const gogi = rand(lower, upper);
+        let gogi = rand(lower, upper);
         // console.log('-> ' + rand(lower, upper));
-        // $('#typeInHtml').append('<p>'+gogi+'</p>');
-        const htmlElement = document.createElement('p');
-        htmlElement.innerText = gogi;
-        document.getElementById('typeInHtml').appendChild(htmlElement);
+        $('#typeInHtml').append('<p>' + gogi + '</p>');
+        // const htmlElement = document.createElement('div');
+        // htmlElement.innerText = gogi;
+        // document.getElementById('typeInHtml').appendChild(htmlElement);
+
         // let value = rand(lower, upper);
     }
 };
+
+
+
+function clearNumbers() {
+    location.reload();
+}
 
 //TODO: Кол-во выводимых паролей || Done
 //TODO: Добавить диапазон длинны ОТ и До || Done

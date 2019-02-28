@@ -10,8 +10,8 @@
 </head>
 <body>
 <h1 style="text-align: center;
-text-transform: uppercase; margin-top: 2rem; color: tomato;">Inputs value of lower, upper and quantity can't be bigger
-    than: 2147483647</h1>
+text-transform: uppercase; margin-top: 1rem; color: tomato;">Inputs value of lower, upper and quantity can't be bigger
+    than: <span>2147483647</span></h1>
 <div class="container">
     Lower
     <input class="lower-limit" id="lower" type="text">
@@ -19,11 +19,13 @@ text-transform: uppercase; margin-top: 2rem; color: tomato;">Inputs value of low
     <input class="upper-limit" id="upper" type="text">
     Quantity
     <input class="quantity" id="quantity" type="text">
-    <button class="button" id="elem" onclick="testType()">
+    <button class="button" id="elem" onclick="">
         <span>Click Me</span>
     </button>
-    <div id="typeInHtml" style="margin-top: 1rem;">Numbers:</div>
+    <button class="clean-numbers" id="clean-numbers-in-html" onclick="clearNumbers()">Clean list of numbers</button>
+    <div class="testType" id="typeInHtml" style="margin: 1rem 0 1rem 0; text-align: center;"></div>
 </div>
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
