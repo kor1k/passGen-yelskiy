@@ -3,7 +3,7 @@ function rand(lower, upper) {
     return Math.floor(Math.random() * (upper - lower) + lower);
 }
 
-let action = document.getElementById('elem').onclick = function () {
+document.getElementById('elem').onclick = function () {
     let limitVal = 2147483647;
     // taking value from low input
     let lower = +document.getElementById('lower').value;
@@ -53,17 +53,23 @@ let action = document.getElementById('elem').onclick = function () {
     }
     //cycle for type n-th quantity of numbers
     for (let i = 0; i < quantity; i++) {
-        console.log('-> ' + rand(lower, upper))
+        const gogi = rand(lower, upper);
+        // console.log('-> ' + rand(lower, upper));
+        // $('#typeInHtml').append('<p>'+gogi+'</p>');
+        const htmlElement = document.createElement('p');
+        htmlElement.innerText = gogi;
+        document.getElementById('typeInHtml').appendChild(htmlElement);
         // let value = rand(lower, upper);
     }
 };
 
+
 // function for make console clear
-function consoleClear() {
-    let c = document.getElementById('clean-console');
-    location.reload();
-    c.onclick = console.clear();
-}
+// function consoleClear() {
+//     let c = document.getElementById('clean-console');
+//     location.reload();
+//     c.onclick = console.clear();
+// }
 
 //TODO: Кол-во выводимых паролей || Done
 //TODO: Добавить диапазон длинны ОТ и До || Done
