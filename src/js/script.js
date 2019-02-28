@@ -11,12 +11,10 @@ document.getElementById('elem').onclick = function () {
     let upper = +document.getElementById('upper').value;
     // taking value from quantity input
     let quantity = +document.getElementById('quantity').value;
-
     // if (quantity => (lower || upper)) {
     //     alert('Quantity cant be bigger that lower and upper');
     //     return false;
     // }
-
     // check for INT limits
     if (lower > limitVal) {
         alert('Number is not valid! Check text in head of page');
@@ -63,7 +61,6 @@ document.getElementById('elem').onclick = function () {
         // let value = rand(lower, upper);
     }
 };
-
 
 function clearNumbers() {
     location.reload();
