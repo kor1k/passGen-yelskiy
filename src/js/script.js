@@ -3,7 +3,7 @@ function rand(lower, upper) {
     return Math.floor(Math.random() * (upper - lower) + lower);
 }
 
-document.getElementById('elem').onclick = function randAction() {
+let action = document.getElementById('elem').onclick = function () {
     let limitVal = 2147483647;
     // taking value from low input
     let lower = +document.getElementById('lower').value;
@@ -11,10 +11,12 @@ document.getElementById('elem').onclick = function randAction() {
     let upper = +document.getElementById('upper').value;
     // taking value from quantity input
     let quantity = +document.getElementById('quantity').value;
-    if (quantity => (lower || upper)){
-        alert('Quantity cant be bigger that lower and upper');
-        return false;
-    }
+
+    // if (quantity => (lower || upper)) {
+    //     alert('Quantity cant be bigger that lower and upper');
+    //     return false;
+    // }
+
     // check for INT limits
     if (lower > limitVal) {
         alert('Number is not valid! Check text in head of page');
@@ -51,7 +53,7 @@ document.getElementById('elem').onclick = function randAction() {
     }
     //cycle for type n-th quantity of numbers
     for (let i = 0; i < quantity; i++) {
-        console.log(rand(lower, upper))
+        console.log('-> ' + rand(lower, upper))
         // let value = rand(lower, upper);
     }
 };
@@ -69,5 +71,4 @@ function consoleClear() {
 //TODO: Добавить проверку на 0 || Done
 //TODO: Добавить проверку на букву || Done
 //TODO: Добавить проверку на символ || Done
-
-//TODO: ограничения на инпуты, проверка ловера на стрингу
+//TODO: ограничения на инпуты, проверка ловера на стрингу || Done
