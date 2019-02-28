@@ -63,14 +63,6 @@ document.getElementById('elem').onclick = function () {
     }
 };
 
-
-// function for make console clear
-// function consoleClear() {
-//     let c = document.getElementById('clean-console');
-//     location.reload();
-//     c.onclick = console.clear();
-// }
-
 //TODO: Кол-во выводимых паролей || Done
 //TODO: Добавить диапазон длинны ОТ и До || Done
 //TODO: Добавить проверку на -число || Done
