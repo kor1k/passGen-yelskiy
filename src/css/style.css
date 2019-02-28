@@ -1,9 +1,12 @@
 * {
     margin: 0 auto;
     width: 980px;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
 }
 
 .container {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +17,6 @@ input {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 20px;
     margin-bottom: 2rem;
     font-size: 20px;
     border-radius: 20px;
@@ -39,4 +41,8 @@ input {
     border: 1px solid green;
     width: 200px;
     height: 50px;
+}
+
+p {
+    margin-bottom: 1rem;
 }
