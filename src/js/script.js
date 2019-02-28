@@ -65,7 +65,6 @@ document.getElementById('elem').onclick = function () {
 };
 
 
-
 function clearNumbers() {
     location.reload();
 }
@@ -77,3 +76,4 @@ function clearNumbers() {
 //TODO: Добавить проверку на букву || Done
 //TODO: Добавить проверку на символ || Done
 //TODO: ограничения на инпуты, проверка ловера на стрингу || Done
+//TODO: Добавить "ячейку" для чисел || Done
