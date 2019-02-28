@@ -3,10 +3,36 @@
     width: 980px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-left: 20px;
     margin-bottom: 2rem;
     font-size: 20px;
     border-radius: 20px;
     border: 1px solid black;
+    width: 300px;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    border: ;
+}
+
+#typeInHtml {
+    margin-bottom: 1rem;
+}
+
+#clean-console {
+    width: 200px;
+    height: 50px;
 }

@@ -2,7 +2,7 @@ function rand(lower, upper) {
     return Math.floor(Math.random() * (upper - lower) + lower);
 }
 
-document.getElementById('elem').onclick = function randAction () {
+document.getElementById('elem').onclick = function randAction() {
     let lower = +document.getElementById('lower').value;
     let upper = +document.getElementById('upper').value;
     let quantity = +document.getElementById('quantity').value;
@@ -26,6 +26,11 @@ document.getElementById('elem').onclick = function randAction () {
     return rand;
 };
 
+function consoleClear() {
+    let c = document.getElementById('clean-console');
+    location.reload();
+    c.onclick = console.clear();
+}
 
 // let typeInHtml = document.getElementById('typeInHtml');
 // typeInHtml.innerText = typeInHtml
