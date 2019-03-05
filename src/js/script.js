@@ -15,6 +15,9 @@ document.getElementById('elem').onclick = function () {
     //     alert('Quantity cant be bigger that lower and upper');
     //     return false;
     // }
+
+
+    
     // check for INT limits
     if (lower > limitVal) {
         alert('Number is not valid! Check text in head of page');
