@@ -53,17 +53,17 @@ document.getElementById('elem').onclick = function () {
     for (let i = 0; i < quantity; i++) {
         let gogi = rand(lower, upper);
         // console.log('-> ' + rand(lower, upper));
-        $('#typeInHtml').append('<p>' + gogi + '</p>');
-        // const htmlElement = document.createElement('div');
-        // htmlElement.innerText = gogi;
-        // document.getElementById('typeInHtml').appendChild(htmlElement);
+        // $('#typeInHtml').append('<p>' + gogi + '</p>');
+        const htmlElement = document.createElement('div');
+        htmlElement.innerText = gogi;
+        document.getElementById('typeInHtml').appendChild(htmlElement);
 
         // let value = rand(lower, upper);
     }
 };
 
 function clearNumbers() {
-    location.reload();
+    location.reload(true);
 }
 
 //TODO: Кол-во выводимых паролей || Done
