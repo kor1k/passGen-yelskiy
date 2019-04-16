@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputs-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60rem;
+}
+
+.inputs-wrapper > input {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    height: 2rem;
+    border: 1px solid tomato;
+    /*width: 5rem;*/
+}
+
+.inputs-wrapper > input:nth-of-type(0) {
+    width: 20rem;
+}
