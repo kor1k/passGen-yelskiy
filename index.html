@@ -9,21 +9,19 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<h1>Inputs value of lower, upper and quantity can't be bigger than: <span>2147483647</span></h1>
+<h1 class="main-title">Inputs value of lower, upper and quantity can't be bigger than: <span>2147483647</span></h1>
 <div class="container">
     <div class="inputs-wrapper">
-        Lower
+        <p class="inputs-title">Lower</p>
         <input required class="lower-limit" id="lower" type="text">
-        Upper
+        <p class="inputs-title">Upper</p>
         <input required class="upper-limit" id="upper" type="text">
-        Quantity
+        <p class="inputs-title">Quantity</p>
         <input required class="quantity" id="quantity" type="text">
-        <!--<button class="button" id="elem">-->
         <input class="button" type="button" id="elem" placeholder="generate" value="Generate">
-        <!--</button>-->
         <button class="clean-numbers" id="clean-numbers-in-html" onclick="clearNumbers()">Clean</button>
+        <div class="testType" id="typeInHtml" style="margin: 1rem 0 1rem 0;"></div>
     </div>
-    <div class="testType" id="typeInHtml" style="margin: 1rem 0 1rem 0; text-align: center;"></div>
 </div>
 
 <script

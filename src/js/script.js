@@ -7,6 +7,7 @@ document.getElementById('elem').onclick = function () {
     let lower = +document.getElementById('lower').value;
     let upper = +document.getElementById('upper').value;
     let quantity = +document.getElementById('quantity').value;
+    // переписать без такого кол-ва if-ов
     if (lower > limitVal) {
         alert('Number is not valid! Check text in head of page');
         return false;
