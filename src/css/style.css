@@ -59,9 +59,5 @@
 }
 
 .testType > div {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*display: inline;*/
-    /*justify-content: space-between;*/
     margin: 1rem;
 }
